@@ -13,7 +13,6 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import javafx.scene.layout.HBox;
-// import javafx.scene.layout.GridPane;  // NOT NEEDED FOR HBOX AND VBOX
 
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -33,18 +32,6 @@ import javafx.scene.control.ButtonType;
 
 public class App extends Application {
 
-    /*
-
-    Code used for simple window - not nested layouts with hbox and vbox....(see below)
-
-    private Label cityLabel;     
-    private Label managerLabel;     
-    private Label zipCodeLabel;
-    private Label stateAbbLabel;
-    private Label locationIDLabel;
-
-    */
-
     private TextField cityField;  
     private TextField managerField; 
     private TextField zipCodeField;
@@ -61,25 +48,20 @@ public class App extends Application {
         cityField = new TextField(); 
         cityField.setPromptText("City");
         cityField.setPrefColumnCount(10);
-        // cityField.setEditable(true);  // NO NEED FOR VBOX/HBOX
 
         managerField = new TextField(); 
         managerField.setPromptText("Manager");
-        // managerField.setEditable(true);  // NO NEED FOR VBOX/HBOX
 
         zipCodeField = new TextField(); 
         zipCodeField.setPromptText("Zip Code");
         zipCodeField.setPrefColumnCount(10);
-        // zipCodeField.setEditable(true);  // NO NEED FOR VBOX/HBOX
 
         stateAbbField = new TextField(); 
         stateAbbField.setPromptText("State Abbreviation (2 letters)");
         stateAbbField.setPrefColumnCount(15);
-        //stateAbbField.setEditable(true);  // NO NEED FOR VBOX/HBOX
 
         locationIDField = new TextField(); 
         locationIDField.setPromptText("Location ID");
-        // locationIDField.setEditable(true);   // NO NEED FOR VBOX/HBOX
 
         addButton = new Button("Add");
         addButton.setOnAction(event -> addButtonMethod());
@@ -133,69 +115,9 @@ public class App extends Application {
         vbox.setPadding(new Insets(10, 0, 0, 10));
         vbox.getChildren().addAll(title, locationTable, hbox);
 
-        /*
+        Scene scene = new Scene(vbox);
 
-        Code for simple window - not nested layouts with hbox and vbox....
-
-        Scene scene = null;
-        GridPane gridPane = null;
-        Insets gridPadding = null;
-
-        gridPane = new GridPane();
-        scene = new Scene(gridPane);
-
-        cityLabel = new Label("City:");
-        managerLabel = new Label("Manager:");
-        zipCodeLabel = new Label("Zip Code:");
-        stateAbbLabel = new Label("State Abbreviation (2 letters): ");
-        locationIDLabel = new Label("Location ID:");
-        
-        cityField = new TextField(); 
-        cityField.setPrefColumnCount(15);
-        cityField.setEditable(true);
-
-        managerField = new TextField(); 
-        managerField.setPrefColumnCount(15);
-        managerField.setEditable(true);
-
-        zipCodeField = new TextField(); 
-        zipCodeField.setPrefColumnCount(15);
-        zipCodeField.setEditable(true);
-
-        stateAbbField = new TextField(); 
-        stateAbbField.setPrefColumnCount(15);
-        stateAbbField.setEditable(true);
-
-        locationIDField = new TextField(); 
-        locationIDField.setPrefColumnCount(15);
-        locationIDField.setEditable(true);
-
-        addButton = new Button("Add");
-        deleteButton = new Button("Delete");
-
-        gridPadding = new Insets(10, 10, 10, 10); // Padding values for top, right, bottom, and left
-        gridPane.setPadding(gridPadding);         // Set padding around  grid
-        gridPane.setHgap(10);                     // Spacing between columns
-        gridPane.setVgap(10);                     // Spacing between rows     
-
-        gridPane.add(cityLabel, 0, 0);
-        gridPane.add(cityField, 1, 0);
-        gridPane.add(managerLabel, 0, 1);
-        gridPane.add(managerField, 1, 1);
-        gridPane.add(zipCodeLabel, 0, 2);
-        gridPane.add(zipCodeField, 1, 2);
-        gridPane.add(stateAbbLabel, 0, 3);
-        gridPane.add(stateAbbField, 1, 3);
-        gridPane.add(locationIDLabel, 0, 4);
-        gridPane.add(locationIDField, 1, 4);
-        gridPane.add(addButton, 0, 5);
-        gridPane.add(deleteButton, 0, 6);
-
-        */ 
-
-        Scene scene2 = new Scene(vbox);
-
-        applicationStage.setScene(scene2);
+        applicationStage.setScene(scene);
         applicationStage.setTitle("Store Locations");
         applicationStage.show();
     }
