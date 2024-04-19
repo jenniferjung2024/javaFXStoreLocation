@@ -34,6 +34,16 @@ Jung         Retail Services
 
 -----
 
+Started with display only, but used the following videos to improve GUI (they helped me a lot):
+
+- https://www.youtube.com/watch?v=mtdlX2NMy4M&list=PL6gx4Cwl9DGBzfXLWLSYVy8EbTdpGbUIG&index=18
+- https://www.youtube.com/watch?v=q1LEN2assfU&list=PL6gx4Cwl9DGBzfXLWLSYVy8EbTdpGbUIG&index=19
+- https://www.youtube.com/watch?v=WJ16Mz_rHGE&list=PL6gx4Cwl9DGBzfXLWLSYVy8EbTdpGbUIG&index=8
+- https://www.youtube.com/watch?v=SpL3EToqaXA&list=PL6gx4Cwl9DGBzfXLWLSYVy8EbTdpGbUIG&index=5
+
+
+-----
+
 ![image](https://github.com/jenniferjung2024/javaFXStoreLocation/assets/164530692/22b0aae7-7ddc-484c-89b7-c1ba9cf0bc70)
 
 
