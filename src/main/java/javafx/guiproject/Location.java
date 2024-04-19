@@ -11,9 +11,12 @@ public class Location {
     public Location() {
     }
 
-    public Location(String city, String storeManager) {
+    public Location(String city, String storeManager, String zipCode, String stateAbb, String locationID) {
        this.city = city;
        this.storeManager = storeManager;
+       this.zipCode = zipCode;
+       this.stateAbb = stateAbb;
+       this.locationID = locationID;
     }
 
     public String getLocationID() {
